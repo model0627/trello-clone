@@ -49,9 +49,21 @@ npx shadcn-ui@latest init
 ✔ Are you using React Server Components? … no / yes
 ✔ Write configuration to components.json. Proceed? … yes
 ```
+```
 npx shadcn-ui@latest add button
 npm install @clerk/nextjs
 npm i usehooks-ts
 npx shadcn-ui@latest add skeleton
 npx shadcn-ui@latest add accordion
 npx shadcn-ui@latest add separator
+npm i zustand
+npx shadcn-ui@latest add sheet 
+npm i -D prisma
+npx prisma init
+npx prisma generate
+npx prisma db push 
+npm i @prisma/client
+npm i zod
+npx shadcn-ui@latest add label
+npx shadcn-ui@latest add input
+```
