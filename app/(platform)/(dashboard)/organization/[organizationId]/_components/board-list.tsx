@@ -4,12 +4,12 @@ import { redirect } from "next/navigation";
 import { HelpCircle, User2 } from "lucide-react";
 
 import { db } from "@/lib/db";
-// import { Hint } from "@/components/hint";
+import { Hint } from "@/components/hint";
 import { Skeleton } from "@/components/ui/skeleton";
-// import { FormPopover } from "@/components/form/form-popover";
-// import { MAX_FREE_BOARDS } from "@/constants/boards";
-// import { getAvailableCount } from "@/lib/org-limit";
-// import { checkSubscription } from "@/lib/subscription";
+import { FormPopover } from "@/components/form/form-popover";
+import { MAX_FREE_BOARDS } from "@/constants/boards";
+import { getAvailableCount } from "@/lib/org-limit";
+import { checkSubscription } from "@/lib/subscription";
 
 export const BoardList = async () => {
   const { orgId } = auth();
@@ -27,8 +27,8 @@ export const BoardList = async () => {
     }
   });
 
-//   const availableCount = await getAvailableCount();
-//   const isPro = await checkSubscription();
+  const availableCount = await getAvailableCount();
+  const isPro = await checkSubscription();
 
   return (
     <div className="space-y-4">
@@ -50,7 +50,7 @@ export const BoardList = async () => {
             </p>
           </Link>
         ))}
-        {/* <FormPopover sideOffset={10} side="right">
+        <FormPopover sideOffset={10} side="right">
           <div
             role="button"
             className="aspect-video relative h-full w-full bg-muted rounded-sm flex flex-col gap-y-1 items-center justify-center hover:opacity-75 transition"
@@ -70,7 +70,7 @@ export const BoardList = async () => {
               />
             </Hint>
           </div>
-        </FormPopover> */}
+        </FormPopover>
       </div>
     </div>
   );

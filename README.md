@@ -66,4 +66,17 @@ npm i @prisma/client
 npm i zod
 npx shadcn-ui@latest add label
 npx shadcn-ui@latest add input
+npx shadcn-ui@latest add tooltip
+npx shadcn-ui@latest add popover
+npm i sonner
+npm i unsplash-js
+npm i lodash
+npm i -D @types/lodash
+npx shadcn-ui@latest add textarea
+npm i @hello-pangea/dnd
+npx shadcn-ui@latest add dialog
+npm i @tanstack/react-query  
+npx shadcn-ui@latest add avatar
+npm i date-fns
+npm i stripe
 ```
